@@ -22,7 +22,7 @@ public class CachedWeatherProviderClient implements WeatherProviderClient {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CachedWeatherProviderClient.class);
 
-    public CachedWeatherProviderClient(@Autowired @Qualifier( "openweathermap") WeatherProviderClient decorated) {
+    public CachedWeatherProviderClient(@Autowired @Qualifier( "reliable") WeatherProviderClient decorated) {
         this.decorated = decorated;
     }
 
